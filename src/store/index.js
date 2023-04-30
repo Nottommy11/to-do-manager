@@ -21,7 +21,29 @@ const store = proxy({
     "test16",
   ],
   todoCount: 0,
-  todoList: [],
+  todoList: [
+    {
+      TabName: "test1",
+      Name: "test1",
+      Description: "test1",
+      Link: "https://Github.com/nottommy11",
+      Completed: false,
+    },
+    {
+      TabName: "test2",
+      Name: "test2",
+      Description: "test2",
+      Link: "https://Github.com/nottommy11",
+      Completed: false,
+    },
+    {
+      TabName: "test3",
+      Name: "test3",
+      Description: "test3",
+      Link: "https://Github.com/nottommy11",
+      Completed: false,
+    },
+  ],
 });
 
 export default store;

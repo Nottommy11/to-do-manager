@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { IoAdd } from "react-icons/io5";
 
@@ -6,8 +7,7 @@ import "./Tabs.css";
 
 import store from "../../store/index";
 
-const Tabs = () => {
-  const [activeTab, setActiveTab] = useState(0);
+const Tabs = (props) => {
   const [tabList, setTabList] = useState(store.tabList);
 
   const addTab = () => {
@@ -22,8 +22,8 @@ const Tabs = () => {
           <Tab
             key={index}
             tab={tab}
-            activeTab={activeTab}
-            setActiveTab={setActiveTab}
+            activeTab={props.activeTab}
+            setActiveTab={props.setActiveTab}
           />
         );
       })}
