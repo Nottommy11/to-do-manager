@@ -25,7 +25,5 @@ body {
 
   height: 100vh;
 
-  max-width: 1696px;
-
   background: radial-gradient(closest-side, var(--grey), var(--dark-grey));
 }

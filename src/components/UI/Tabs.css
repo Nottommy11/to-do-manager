@@ -16,6 +16,10 @@
   color: var(--dark-grey);
 }
 
+.add-tab-icon {
+  font-size: 1.3rem;
+}
+
 .tab-container {
   display: flex;
   flex-direction: row;
