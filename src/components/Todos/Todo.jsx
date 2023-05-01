@@ -3,8 +3,6 @@ import { useState } from "react";
 import { BsTrash, BsTrashFill } from "react-icons/bs";
 import { AiOutlineSetting, AiFillSetting } from "react-icons/ai";
 
-import youtubeImg from "../../../public/youtube.jpg";
-
 const Todo = (props) => {
   const [settingsHover, setSettingsHover] = useState(false);
   const [deleteHover, setDeleteHover] = useState(false);
@@ -18,7 +16,7 @@ const Todo = (props) => {
           rel="noreferrer"
           className="todo-img-link"
         >
-          <img src={youtubeImg} alt="Todo img" className="todo-img" />
+          <img src={props.todo.Img} alt="Todo img" className="todo-img" />
         </a>
         <div className="todo-text">
           <div className="todo-title"> {props.todo.Name}</div>
@@ -41,6 +39,7 @@ const Todo = (props) => {
           className="todo-delete-icon-container"
           onMouseEnter={() => setDeleteHover(true)}
           onMouseLeave={() => setDeleteHover(false)}
+          onClick={() => props.deleteTodo(props.todo)}
         >
           {deleteHover ? (
             <BsTrashFill className="todo-delete-icon" />

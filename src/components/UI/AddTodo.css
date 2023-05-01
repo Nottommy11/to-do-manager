@@ -1,0 +1,203 @@
+.todo-modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+.todo-modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 101;
+}
+
+.todo-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+
+  border-radius: 10px;
+
+  padding: 20px;
+
+  width: 500px;
+  height: 500px;
+
+  animation: moveInBottom 1s ease-in-out;
+}
+
+.todo-modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.todo-modal-link-input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.todo-modal-link-input:focus {
+  outline: none;
+}
+
+.todo-modal-link-input::placeholder {
+  font-size: 1rem;
+
+  color: #333;
+
+  cursor: text;
+}
+
+.todo-modal-link-input:focus::placeholder {
+  color: var(--light-purple);
+}
+
+.todo-modal-link-input:hover::placeholder {
+  color: var(--light-purple);
+
+  transition: color 0.2s ease-in-out;
+}
+
+.todo-modal-autofill-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 100%;
+
+  gap: 10px;
+}
+
+.todo-modal-autofill {
+  height: 15px;
+  width: 15px;
+}
+
+.todo-modal-autofill-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.todo-modal-file {
+  width: 100%;
+  height: 25px;
+}
+
+.todo-img-preview {
+  height: 80px;
+  aspect-ratio: 16/9;
+
+  display: block;
+
+  border-radius: 20px;
+  border: 1px solid #333;
+
+  object-fit: cover;
+
+  transition: scale 0.2s ease-in-out;
+}
+
+.todo-img-preview:hover {
+  scale: 2;
+}
+
+.todo-modal-name-input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.todo-modal-name-input:focus {
+  outline: none;
+}
+
+.todo-modal-name-input::placeholder {
+  font-size: 1rem;
+
+  color: #333;
+
+  cursor: text;
+}
+
+.todo-modal-name-input:focus::placeholder {
+  color: var(--light-purple);
+}
+
+.todo-modal-name-input:hover::placeholder {
+  color: var(--light-purple);
+
+  transition: color 0.2s ease-in-out;
+}
+
+.todo-modal-desc-input {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 5px;
+
+  resize: none;
+}
+
+.todo-modal-desc-input:focus {
+  outline: none;
+}
+
+.todo-modal-desc-input::placeholder {
+  font-size: 1rem;
+
+  color: #333;
+
+  cursor: text;
+}
+
+.todo-modal-desc-input:focus::placeholder {
+  color: var(--light-purple);
+}
+
+.todo-modal-desc-input:hover::placeholder {
+  color: var(--light-purple);
+
+  transition: color 0.2s ease-in-out;
+}
+
+.todo-modal-btn {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background: var(--light-purple);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.todo-modal-btn:hover {
+  background: var(--dark-purple);
+
+  transition: background 0.2s ease-in-out;
+}
+
+.todo-modal-btn:active {
+  background: var(--lightest-purple);
+
+  transition: background 0.2s ease-in-out;
+}

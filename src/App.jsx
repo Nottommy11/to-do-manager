@@ -14,7 +14,11 @@ const App = () => {
   return (
     <>
       <Navbar resetTab={resetTab} />
-      <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
+      <Tabs
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+        resetTab={resetTab}
+      />
       <Todos activeTabName={activeTab.innerText} />
     </>
   );

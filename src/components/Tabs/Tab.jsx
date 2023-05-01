@@ -21,7 +21,10 @@ const Tab = (props) => {
     >
       <div className="tab-title">{props.tab}</div>
       <AiOutlineDown className="tab-settings-icon" />
-      <AiOutlineClose className="tab-close-icon" />
+      <AiOutlineClose
+        className="tab-close-icon"
+        onClick={() => props.deleteTab(props.tab)}
+      />
     </div>
   );
 };

@@ -1,0 +1,98 @@
+.tab-modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.tab-modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 101;
+}
+
+.tab-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+
+  border-radius: 10px;
+
+  padding: 20px;
+
+  width: 300px;
+  height: 150px;
+
+  animation: moveInBottom 1s ease-in-out;
+}
+
+.tab-modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.tab-modal-input {
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.tab-modal-input:focus {
+  outline: none;
+}
+
+.tab-modal-input::placeholder {
+  font-size: 1rem;
+
+  color: #333;
+
+  cursor: text;
+}
+
+.tab-modal-input:focus::placeholder {
+  color: var(--light-purple);
+}
+
+.tab-modal-input:hover::placeholder {
+  color: var(--light-purple);
+
+  transition: color 0.2s ease-in-out;
+}
+
+.tab-modal-btn {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background: var(--light-purple);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tab-modal-btn:hover {
+  background: var(--dark-purple);
+
+  transition: background 0.2s ease-in-out;
+}
+
+.tab-modal-btn:active {
+  background: var(--lightest-purple);
+
+  transition: background 0.2s ease-in-out;
+}

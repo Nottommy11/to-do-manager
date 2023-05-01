@@ -35,7 +35,7 @@
   padding: 10px;
   margin-bottom: 10px;
 
-  animation: moveInRight 1s ease-in-out;
+  animation: moveInBottom 1s ease-in-out;
 }
 
 .todo-content {
@@ -52,13 +52,14 @@
 
 .todo-img {
   height: 80px;
+  aspect-ratio: 16/9;
 
   border-radius: 20px;
 
-  margin-right: 10px;
+  margin-right: 20px;
+  margin-left: 10px;
 
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
 }
 
 .todo-img:hover {
